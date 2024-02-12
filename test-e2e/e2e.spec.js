@@ -115,9 +115,9 @@ describe('gatt e2e', () => {
       })
     })
 
-    console.log({notifiedString: res.toString()})
+    console.log({ notifiedString: res.toString() })
     expect(res).toBeInstanceOf(Buffer)
-    expect(res.toString().startsWith("Notification data")).toBeTruthy()
+    expect(res.toString().startsWith('Notification data')).toBeTruthy()
 
     await notifiableCharacteristic.stopNotifications()
   })
